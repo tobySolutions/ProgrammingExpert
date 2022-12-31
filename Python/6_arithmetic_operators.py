@@ -80,7 +80,7 @@ Notes:
 # x = 33.0
 # y = 7
 
-# result = x // y  # returns 4.0,  float // int = float  
+# result = x // y  # returns 4.0,  It stil chops off the decimals, except that it will be a float e.g 9 // 2.5 equals 3.0
 
 # print(result)
 
@@ -135,6 +135,7 @@ Notes:
 
 # Using Operators with the wrong data types:
 
-answer = "5" + 6  # can only concatenate str (not "int") to str
+# answer = "5" + 6  # can only concatenate str (not "int") to str
 
 # print(answer)
+
