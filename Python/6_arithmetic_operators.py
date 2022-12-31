@@ -59,7 +59,7 @@ Notes:
 
 # Division
 
-# Float division operator
+# Float division operator (Standard division)
 # x = 35.2
 # y = 7.4
 
