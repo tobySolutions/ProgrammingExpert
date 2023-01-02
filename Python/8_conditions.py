@@ -6,6 +6,7 @@ Notes:
 - Use ord() function to check the ASCII code of a character
 - Use chr() function to check the character represented by an integer.
 - When comparing strings, the ASCII codes of each character in the strings is compared starting from the first character.
+- Strings are compared lexicographically in Python
 """
 
 # What are Conditions
