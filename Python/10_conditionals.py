@@ -1,9 +1,14 @@
 """
 Notes:
-  - Conditionals are used when you want to run a part of a program conditionally
-  - Indentation is important for if, elif and else statements
-  - 1 tab key press equals 4 space key presses
+
+  -Conditionals are used when you want to run a part of a program conditionally.
+  
+  -Indentation is important for if, elif and else statements.
+  
+  -1 tab key press equals 4 space key presses.
 """
+
+
 
 # If, elif, else statements
 
@@ -22,6 +27,7 @@ Notes:
 
 
 
+
 # Nested conditions - Watch out for Indentation
 
 # if number < 10 and number % 1.0 == 0:  # Remainder after dividing by 1.0 must be "0"
@@ -31,6 +37,8 @@ Notes:
 #      print("Second number is greater than the first number")
 #    else:
 #     print("Second number", another_number, "is within the range of the condition for first number")
+
+
 
 
 # In-line if statement
