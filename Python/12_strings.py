@@ -171,3 +171,7 @@ Notes:
 # print(string[2])  # "b"
 # print(string[-3])  # "o"
 # print(len(string))  # 8
+
+
+
+
