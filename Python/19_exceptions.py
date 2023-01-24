@@ -13,7 +13,7 @@ Notes:
 
 - It's not good practice to accept "General exceptions".
 
-- Compile-time exceptions occur and are raised even before the program is run (mostly syntactical related)
+- Compile-time exceptions occur and are raised even before the program is run (mostly syntax related)
 
 - Runtime exceptions occur while the program is running (most of them have exception classes that they're raised by.).
 
