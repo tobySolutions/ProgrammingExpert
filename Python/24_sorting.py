@@ -3,7 +3,7 @@ Notes:
 
 - There are 2 ways to sort in Python:
 
-   - sorted() function: returns a new object with the items in ascending order (by default). It doesn't modify the original object.
+   - sorted() function: returns a new list with the items in ascending order (by default). It doesn't modify the original object.
 
    - .sort() method: sorts the object in place, doesn't return a new object. Doesn't work on tuples; due to their immutability
 
