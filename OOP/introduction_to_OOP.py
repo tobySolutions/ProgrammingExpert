@@ -5,7 +5,8 @@ Notes:
 
 - Data types are defined by classes in Python.
 
-- A "Method" is a function that acts on an instance of a class (on an object)
+- A "Method" is a function that acts on an instance of a class (on an object). They typically are called with the dot (.) after the object (instance).
+
 
 - An "object" is an instance of a class. It has access to the methods defined in the class and it obeys the rules of the class.
 
