@@ -87,3 +87,4 @@ It could be to abstract implementation thereby simplifying or to just prevent mi
 
 # print(type(person_one))  # <class '__main__.Person'>
 
+
