@@ -52,6 +52,8 @@ Notes:
         self._salary = salary 
 
 - When using properties, you still get to run all the checks you've added to your getters and setters.
+
+- There are no access modifiers in Python (private, public, protected).
 """
 
 # Property examples:
