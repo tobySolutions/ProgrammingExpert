@@ -1,4 +1,5 @@
 '''
+
 There are 5 fundamental data types in Python and they are:
 
 1) int: Positive and Negative "Integers".
@@ -9,6 +10,7 @@ There are 5 fundamental data types in Python and they are:
 4) bool: Booleans in Python have only two values which is either True or False.
 
 5) None: Like null in Javascript (Nothing)
+
 '''
 
 
