@@ -3,6 +3,7 @@
 There are 5 fundamental data types in Python and they are:
 
 1) int: Positive and Negative "Integers".
+
 2) float: Positive and Negative floating-point numbers(any number with a decimal point).
 
 3) str: Sequence of characters with ', ", """, '''''' at the start and end.
