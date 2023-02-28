@@ -73,7 +73,7 @@ Notes:
 # my_games = [AnotherGame(), RandomGuesser(2)]    
 
 # for game in my_games:
-#   game.start()  # NotImplementedError: Ypu must provide an implementation for play()
+#   game.start()  # NotImplementedError: You must provide an implementation for play()
     
     
 
