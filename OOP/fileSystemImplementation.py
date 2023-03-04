@@ -14,13 +14,7 @@ class FileSystem:
         self.root = Directory("/")
 
     def create_directory(self, path):
-        FileSystem._validate_path(path)
-
-        path_node_names = path[1:].split("/")
-        middle_node_names = path_node_names[:-1]
-        new_directory_name = path_node_names[-1]
-
-        before_last_node = self._find_bottom_node(middle_node_names)
+        before_last_node, new_directory_name = self._extract_from_path(path)
 
         if not isinstance(before_last_node, Directory):
             raise ValueError(f"{before_last_node.name} isn't a directory")
@@ -29,15 +23,22 @@ class FileSystem:
 
         before_last_node.add_node(new_directory)
 
-    def create_file(self, path, contents):
+  
+    def _extract_from_path(self, path):
         FileSystem._validate_path(path)
 
         path_node_names = path[1:].split("/")
         middle_node_names = path_node_names[:-1]
-        new_file_name = path_node_names[-1]
+        last_node_name = path_node_names[-1]
 
-        before_last_node = self._find_bottom_node(middle_node_names)
+        before_last_node = self._find_bottom_node(middle_node_names)    
 
+        return (last_node_name, before_last_node)
+      
+  
+    def create_file(self, path, contents):
+        before_last_node, new_file_name = self._extract_from_path(path)
+      
         if not isinstance(before_last_node, Directory):
             raise ValueError(f"{before_last_node.name} isn't a directory")
 
@@ -48,14 +49,7 @@ class FileSystem:
 
 
     def read_file(self, path):
-        FileSystem._validate_path(path)
-
-        path_node_names = path[1:].split("/")
-        middle_node_names = path_node_names[:-1]
-        file_name = path_node_names[-1]
-
-        before_last_node = self._find_bottom_node(middle_node_names)
-
+        before_last_node, file_name = self._extract_from_path(path)
         if not isinstance(before_last_node, Directory):
             raise ValueError(f"{before_last_node.name} isn't a directory")
 
@@ -65,13 +59,7 @@ class FileSystem:
         return before_last_node.children[file_name].contents
 
     def delete_directory_or_file(self, path):
-        FileSystem._validate_path(path)
-
-        path_node_names = path[1:].split("/")
-        middle_node_names = path_node_names[:-1]
-        node_to_delete_name = path_node_names[-1]
-
-        before_last_node = self._find_bottom_node(middle_node_names)
+        before_last_node, node_to_delete_name = self._extract_from_path(path)
 
         if not isinstance(before_last_node, Directory):
             raise ValueError(f"{before_last_node.name} isn't a directory")
