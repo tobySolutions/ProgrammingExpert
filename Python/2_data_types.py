@@ -22,8 +22,3 @@ print(type("Agbo")) # <class 'str'>
 print(type(True)) # <class 'bool'>
 print(type(2.6)) # <class 'float'>
 print(type(None)) # <class 'NoneType'>
-
-
-
-
-
