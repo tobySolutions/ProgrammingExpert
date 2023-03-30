@@ -31,13 +31,14 @@ Notes:
 
 # arguments = [1, 2, 5]
 # keyword_arguments = {'b': 2, 'c': 4}
-# test(1, *arguments, **keyword_arguments)
-
-
+# print(1, *arguments, **keyword_arguments)
 
 
 
 # Splat / Unpack operator:
+
+# print(*[1, 2, 3, 4], **{'end': "|", 'sep': "*"}) # 1*2*3*4|
+
 
 # values = [1, 3, 4, 5, 6, 7, 8, 10, 11, 12, 14, 16, 18]
 # print(*values) # 1 3 4 5 6 7 8 10 11 12 14 16 18
