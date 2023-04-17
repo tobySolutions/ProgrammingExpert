@@ -1,5 +1,4 @@
 """
-
 Notes:
 
 - "Decorators" describe a special kind of function that is meant to "wrap" another function.
