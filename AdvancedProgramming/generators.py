@@ -7,6 +7,8 @@ Notes:
 
 - When you call a function that contains the "yield" keyword, it gives you a "generator object".
 
+- Normal iterators created from the __iter__() are called legacy iterators
+
 - A lot of times, you use a "Generator" when you want to generate an infinite sequence or a close-to-infinite sequence.
 
 - You use a "Generator" when you do not care about the entire sequence, you just want to use one value at a time and you'll use a "list" when you want to access all the values.
