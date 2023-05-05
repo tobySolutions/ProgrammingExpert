@@ -28,6 +28,35 @@ Notes:
 - A self-contained-iterator is not a good idea as internal state will be shared across all the iterators of it.
 """
 
+
+class Range:
+    def __init__(self, start, stop, step):
+        self.start = start
+        self.stop = stop
+        self.step = step
+
+    def __iter__(self):
+        return RangeIterator(self.start, self.stop, self.step)
+
+
+class RangeIterator:
+    def __init__(self, startRange, stopRange, stepOfRange):
+        self.startRange = startRange
+        self.stopRange = stopRange
+        self.stepOfRange = stepOfRange
+        self.current = self.startRange
+
+    def __next__(self):
+        if self.stepOfRange > 0 and self.current >= self.stopRange:
+            raise StopIteration
+        if self.stepOfRange < 0 and self.current <= self.stopRange:
+            raise StopIteration
+
+        self.current += self.stepOfRange
+
+        return self.current - self.stepOfRange
+
+
 # Self-contained Iterator:
 
 # class Numbers: 
